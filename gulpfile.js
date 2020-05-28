@@ -54,7 +54,7 @@ task("dev-styles", () => {
           require("autoprefixer"),
         ])
       )
-      // .pipe(concat({ path: "style.css" }))
+      .pipe(concat({ path: "style.css" }))
       .pipe(dest(options.paths.dist.css))
   );
 });
